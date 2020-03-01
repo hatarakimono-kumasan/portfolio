@@ -1,0 +1,341 @@
+<!DOCTYPE  html>
+<html  lang="ja">
+    
+<head>
+<meta  charset="UTF-8">
+<title>ポートフォリオ</title>
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+<meta  http-equiv="X-UA-Compatible"  content="ie=edge">
+<link  rel="stylesheet"  href="https://unpkg.com/ress/dist/ress.min.css"><!-- ressリセット -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"><!-- drawer.css -->
+<link rel="stylesheet" href="wow/css/libs/animate.css"><!--wow-->
+
+
+
+<link  rel="stylesheet"  type="text/css"  href="scss/style.css">
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarTogglerDemo03" class="drawer drawer-responsive">
+
+    <div class="background">
+
+    
+    <header class="navbar  navbar-light">  <!--navbar-light bg-light-->
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler drawer-toggle" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <nav class="collapse navbar-collapse drawer_back" id="navbarTogglerDemo03">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="#profile" lang="en">
+                        Profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sarvise" lang="en">Servise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works" lang="en">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" lang="en">Contact</a>
+                </li>
+            </ul>
+            <i class="fas fa-times"></i>
+        </nav>
+    </header>
+
+
+    <div class="box">
+        <div class="top">
+                <img class="top-img img-fluid" src="img/name_card.jpg" alt="荒井かおりの名刺">
+            <!-- <img class="top-img-2 " src="img/home.jpg" alt="チームワーク"> -->
+            <!-- <h1>丁寧に<br>1つ１つ確実に<br>がモットーです</h1> -->
+        </div>
+    </div>
+
+
+    <section class="profile" id="profile">
+        <div class="ribbon">
+            <h2 lang="en">Profile</h2>
+        </div>
+
+        <div class="box-wapper">
+            <div class="box_1">
+                <div class="experience">
+                    <h3 lang="en">Career</h3>
+                    <p>21～24歳 看護師として心臓内科勤務</p>
+                    <p>24歳 ～ ワーキングホリデーにてオーストラリア（現在もオーストラリア在住）</p>
+                    <p>英語の壁でオーストラリアでの看護師は断念し、レストランにてウエイトレス＆キッチンスタッフとして勤務</p>
+                    <p>33歳プログラミングに興味を持ち独学で勉強を始める</p>
+                </div>
+                    
+                <div class="about-me-pc">
+                    <img class="kaori"  src="img/kaori.JPG" alt="荒井 かおり">
+                    <p>荒井 かおり</p>
+                </div>
+            </div>
+            <section class="skill" >
+                <h3 lang="en">Skill</h3>
+                <div class="skill_box wow slideInRight" data-wow-duration="2s" data-wow-delay="5s">
+                    <div class="skill_items">
+                        <h4 lang="en">HTML</h4>
+                        <canvas id="chart1" class="slill_item" height="250" width="250"></canvas>
+                    </div>
+                    
+                    <div class="skill_items">
+                        <h4 lang="en">SCSS</h4>
+                        <canvas id="chart2" class="slill_item" height="250" width="250"></canvas>
+                    </div>
+                    
+                    <div class="skill_items">
+                        <h4 lang="en">JavaScript</h4>
+                        <canvas id="chart3" class="slill_item" height="250" width="250"></canvas>
+                    </div>
+                    <div class="skill_items">
+                        <h4 lang="en">WordPress</h4>
+                        <canvas id="chart4" class="slill_item" height="250" width="250"></canvas>
+                    </div>
+                </div>
+            </section>
+                    
+            <section class="qestion__conteiner">
+
+                <h3 lang="en">Question</h3>
+                <ul>
+                    <li class="qestion_box">
+                        <p class="qestion">Q 長所/短所</p><span>+</span>
+                        <div class="answer">
+                            <p>
+                                A 長所：自分が「やりたい!!」と思ったことに対して最後までやり遂げる努力をするとこができる。
+                                <br>
+                                &nbsp;&nbsp; 短所：前職までの経験から仕事に慣れるまでに一定の時間がかかってしまうことを自負しております。（容量が悪い）ですが、今までは周りの先輩・同期の温かい目もあり、一定の期間以降は頼ってもらえたり、責任あるポジションを任されることもありました。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="qestion_box">
+                        <p class="qestion">Q なぜ、プログラミングを始めたのか？</p><span>+</span>
+                    <div class="answer">
+                        <p>
+                            A 今までは出勤し働くのが当然だと思っていました。しかし、結婚を機に仕事を辞め、将来子育てしながらも、何か自分にできる仕事はないかと探していた折「プログラミング」を初めて知り、まずはprogateをやってみよう。から始まり、サイト模写などに挑戦。もちろんわからない事ばかりですが、壁を乗り越えられた時の「やったー！できた！」の感覚にハマり、現在も楽しみながらスキルを上げるべく、キーボードをたたいています。 
+                        </p>
+                    </div>
+                </li>
+                <li class="qestion_box">
+                    <p class="qestion">Q これから何をしたいか？？</p><span>+</span>
+                    <div class="answer">
+                        <p>
+                            A 自身のコーディング力の向上はもちろん、前職までのコミュニケーションスキルを活かし、チームの1人として依頼者さんのご要望に対応できるスキルやより良いサイト作りに携われたらと思います。
+                            また、このサイト見ての通りデザイン知識が乏しいことも心得ております。コーディングスキルに加えてデザインスキルもあげていきたいです。
+                            まだ駆け出しなので経験数は少ないですが、最近はWordPressにて自作テーマを作れるようになりました。これからも、色んな事にアンテナを張り技術を高めたい‼と思っています。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+            <div class="about-me">
+                <img class="kaori" src="img/kaori.JPG" alt="荒井 かおり">
+                <p>荒井 かおり</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="service" id="service">
+        <div class="ribbon">
+            <h2 lang="en">Servise</h2>
+        </div>
+        <div class="box-wapper">
+        <div class="service_box">
+            <ul>
+                <li class="service_item">
+                    <h3>レスポンシブ</h3>
+                    <p>PC、タブレット、スマートフォンなど、異なる画面サイズの幅を基準にWebサイト表示を柔軟に調整し、見やすく最適な表示にします。</p>
+                </li>
+                <li class="service_item">
+                    <h3><span>web</span>制作</h3>
+                    <p>主にHTML/CSS/JavaScriptを使ってご要望に沿った形をレスポンシブ対応で実装します。WordPressの自作テーマやカスタマイズなども可能です。</p>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="works" id="works">
+        <div class="ribbon">
+            <h2 lang="en">Works</h2>
+        </div>
+        <div class="bg">
+            <div class="works_content">
+                <ul class="works_items">
+                    <li class="works_item">
+                        <a class="js-modal-open" data-target="modal01" data-lightbox="group"><img class="works_img" src="/img/works_airbnb_small.png" alt="Airbnbのサイト模写 1つ目"></a>
+                    </li>
+                    <li class="works_item">
+                        <a class="js-modal-open" data-target="modal02" data-lightbox="group"><img class="works_img" src="/img/works_airbnb_2nd_small.png" alt="Airbnbのサイト模写 2つ目"></a>
+                    </li>
+                    <li class="works_item">
+                        <a class="js-modal-open" data-target="modal03" data-lightbox="group"><img class="works_img" src="/img/works_daytora_1st_small.png" alt="東京フリーランス 30daysトライアル1st 最終課題"></a>
+                    </li>
+                    <li class="works_item">
+                        <a class="js-modal-open" data-target="modal04" data-lightbox="group"><img class="works_img" src="/img/works_daytora_2nd_small.png" alt="東京フリーランス 30daysトライアル2nd 最終課題"></a>
+                    </li>
+                    <li class="works_item">
+                        <a class="js-modal-open" data-target="modal05" data-lightbox="group"><img class="works_img" src="/img/works_wordpress_small.png" alt="WordPressの自作テーマ"></a>
+                    </li>
+                </ul>
+            </div><!--/works_content-->
+
+            <div id="modal01" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                    <a class="js-modal-close"  href="#">閉じる<i class="fas fa-times"></i></a>
+                    <img src="/img/works_airbnb_1st.png" alt="Airbnbのサイト模写 1つ目">
+                    <div class="modal__content_box">
+                        <h3>Airbnbのサイト模写 1つ目</h3>
+                        <ul class="modal_items">
+                            <li class="modal_item"><h4>制作時期</h4><p>2019年6月</p></li>
+                            <li class="modal_item"><h4><span lang="en">memo</span>&nbsp;</h4><p>初めてのサイト模写でFont AwesomeにAirbnbのアイコンがあるとは思わず、左上のアイコンを自作。これ以降はしっかりFont Awesomeをチェックするようになりました.<br>
+                                実際のサイトは複数ページありますが、最初ということもあり、この1ページのみの模写で1か月近くかかりました。
+                            </p></li>
+                        </ul>
+                    </div>
+                </div><!--modal__inner-->
+            </div><!--modal-->
+
+            <div id="modal02" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                    <a class="js-modal-close" href="#">閉じる<i class="fas fa-times"></i></a>
+                    <img src="/img/work_aribnb_2nd.png" alt="Airbnbのサイト模写 2つ目">
+                    <div class="modal__content_box">
+                        <h3>Airbnbのサイト模写 2つ目</h3>
+                        <ul class="modal_items">
+                            <li class="modal_item"><h4>制作時期</h4><p>2019年7月</p></li>
+                            <li class="modal_item"><h4><span lang="en">memo</span>&nbsp;</h4><p>初回模写よりもボリュームがあり、codeの内容もより複雑に感じました。前回はflotしか使っていなかったのですが、この時始めて「Flex box」を勉強し使いこなせるようになりました。疑似要素＋Font Awesome使用時「□」と表示され、だいぶ躓きました。
+                            </p></li>
+                        </ul>
+                    </div>
+                </div><!--modal__inner-->
+            </div><!--modal-->
+
+            <div id="modal03" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                    <a class="js-modal-close"  href="#">閉じる<i class="fas fa-times"></i></a>
+                    <img src="/img/work_daytora_1st.png" alt="東京フリーランス 30daysトライアル1st 最終課題">
+                    <div class="modal__content_box">
+                        <h3>東京フリーランス 30daysトライアル1st 最終課題</h3>
+                        <ul class="modal_items">
+                            <li class="modal_item"><h4>制作時期</h4><p>2019年9月</p></li>
+                            <li class="modal_item"><h4><span lang="en">memo</span>&nbsp;</h4><p>XDのデザインカンプから必要な情報を取ってきて、ピクセルパーフェクトでコーディングを行うという課題で、トップページにスライダーが実装されており、この時始めてJavaScript（jQuery）を実装し、かなりの時間を消費ました。白紙からjQueryのcodeを書くことは難しいですが、調べながらであればレスポンシブの際のdrawerやQuestionのアコーディオンなどの実装はできています。
+                            </p></li>
+                        </ul>
+                    </div>
+                </div><!--modal__inner-->
+            </div><!--modal-->
+
+            <div id="modal04" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                    <a class="js-modal-close"  href="#">閉じる<i class="fas fa-times"></i></a>
+                    <img src="/img/work_daytora_2nd.png" alt="東京フリーランス 30daysトライアル2nd 最終課題">
+                    <div class="modal__content_box">
+                        <h3>東京フリーランス 30daysトライアル2nd 最終課題</h3>
+                        <ul class="modal_items">
+                            <li class="modal_item"><h4>制作時期</h4><p>2019年11月</p></li>
+                            <li class="modal_item"><h4><span lang="en">memo</span>&nbsp;</h4><p>こちらLPもXDのカンプから必要なデータを取ってきてコーディングしています。背景が複雑で難しく感じ、おそばせながらこの時「position」が使いこなせるようになりました。いままでは難しそうと毛嫌いしていたFormも中身がないと送信できない実装にするなど、前回よりも1工夫加えています。
+                            </p></li>
+                        </ul>
+                    </div>
+                </div><!--modal__inner-->
+            </div><!--modal-->
+        
+   
+            <div id="modal05" class="modal js-modal">
+                <div class="modal__bg js-modal-close"></div>
+                <div class="modal__content">
+                    <a class="js-modal-close"  href="#">閉じる<i class="fas fa-times"></i></a>
+                    <img src="/img/works_wordpress.png" alt="WordPressの自作テーマ">
+                    <div class="modal__content_box">
+                        <h3>WordPressの自作テーマ</h3>
+                        <ul class="modal_items">
+                            <li class="modal_item"><h4>制作時期</h4><p>2019年2月</p></li>
+                            <li class="modal_item"><h4><span lang="en">memo</span>&nbsp;</h4><p>WordPressの勉強用にブログサイトを自作テーマにて行ったので、こちらは今まで自分が働いていたレストランをモデルに飲食店サイトを自作しました。（HTML/CSSはテンプレートをお借りしました。）
+                            </p></li>
+                        </ul>
+                    </div>
+                </div><!--modal__inner-->
+            </div><!--modal-->
+        </div><!--/bg-->
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="ribbon">
+            <h2 lang="en">Contact</h2>
+        </div>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSclGiJmXq7xsbbrm-oQpkaG8BT8pn8G239vkMlgWFExS0vOCQ/formResponse">
+            <div class="form-group">
+                <label for="exampleInputName">お名前</label>
+                <input type="text" name="entry.2005620554" class="form-control" id="exampleInputName" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail">メールアドレス</label>
+                <input type="text" name="entry.1045781291" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required>
+                <small id="emailHelp" class="form-text text-muted">※お問い合わせ内容の返信のために使用します。他の目的では一切使用しません。</small>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group mb-3">
+                    <label for="validationTextarea">お問い合わせ内容</label>
+                <textarea class="form-control" name="entry.839337160" id="validationTextarea" placeholder="WEBサイト作成のご相談やご依頼などお気軽にお問い合わせください。" required></textarea>
+                <div class="invalid-feedback">
+                    お問い合わせ内容のご記入をお願いします。
+                </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">送信</button>
+        </form>
+        
+        <div class="floating">
+            <a href="#"><i class="fas fa-angle-up"></i></a>
+        </div>
+    </section>
+    <hr>
+    <footer>
+            <p>Copyright &copy; 2020 One Piece All rights reserved.</p>
+    </footer>
+    </div>
+
+
+
+<!-- Script Source Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><!--bootstrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!--bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script><!--iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script><!-- drawer.js -->
+<script src="wow/dist/wow.min.js"></script><!--wow-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script><!--チャート-->
+
+
+
+<script src="js/doughnutData.js"></script>
+<script src="/js/floating.js"></script><!--for floating-->
+<script src="/js/drawer.js"></script>
+<script src="/js/qestion.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/modal.js"></script>
+<!-- End of Script Source Files -->
+
+</body>
+</html>
+    
