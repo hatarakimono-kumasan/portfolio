@@ -1,0 +1,35 @@
+// ブレークポイント
+//$layout-width-inner: 1106px;
+$breakpoints: (
+"sp": "screen and (max-width: 560px)",
+//"tab": "screen and (min-width:560px) and (max-width: #{$layout-width-inner - 1px})",
+"tab": "screen and (min-width:561px) and (max-width: 960px)",
+"pc": "screen and (min-width: 961px)",
+);
+
+
+
+@mixin mq($breakpoint: sp) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: tab) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: pc) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+
+    @content;
+  }
+}
+

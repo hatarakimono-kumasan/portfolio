@@ -1,0 +1,42 @@
+body  .box{
+    background-image: url('/img/paper_light_pink-min.jpg');
+    width: 95%;
+    height: 68vh;
+    margin: 3rem auto;
+    transform: rotate3d(1, 1, 1, -19deg);
+}
+
+.top{
+    width: 100%;
+    position: relative;
+    margin: 9rem 0;
+}
+
+@include mq('sp'){
+    .top .top-img {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+        right: -3%;
+        transform: rotate3d(1, 1, 1, 16deg);
+    }
+}
+@include mq('tab'){
+    .top .top-img {
+        width: 81%;
+        position: absolute;
+        top: 20%;
+        right: 9%;
+        transform: rotate3d(1, 1, 1, 16deg);
+    }
+}
+@include mq('pc'){
+    .top .top-img{
+        transform: rotate3d(1, 1, 1, 16deg);
+        width: 40%;
+        display: block;
+        top: 34%;
+        position: absolute;
+        left: 29%;
+    }
+}

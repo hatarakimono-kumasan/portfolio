@@ -1,0 +1,119 @@
+form{
+    border: 1px solid rgb(7, 7, 7);
+    background-color: #fff;
+    width: 70%;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    padding: 5rem;
+    position: relative;
+
+    .form-group{
+        margin-bottom: 3rem;
+    }
+    //フォーカスがあたった時
+    .form-control:focus, input:hover, input:active, textarea:hover, textarea:active{
+        outline: 0;
+        border-color: var(--accent_color ,$effect-coloer);
+        box-shadow: 2px 2px 2px var( --accent_color ,$effect-coloer);
+    }
+    .btn-primary{
+        text-align: center;
+        background-color: #FAEED1;
+        border-color: gray;
+        margin: auto;
+        width: 50%;
+        display: block;
+    }
+    .btn-primary:hover, .btn-primary:active{
+        background-color: $effect-coloer;
+    }
+}
+//text areaの高さ
+#validationTextarea{
+    height: 300px;
+}
+//topに戻るボタン
+.floating {
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    display: none;
+}
+.floating a {
+    display: block;
+    color: #3E3E3E;
+    background: #fff;
+    padding: 8px;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.floating a:hover {
+    opacity: 1;
+}
+.fa-angle-up{
+    font-family: "Font Awesome 5 Free";
+    width: 50px;
+    height: 50px;
+    font-size: 3.5rem;
+    padding-left: .3rem;
+}
+
+@include mq('sp'){
+    //猫ちゃん
+    .form-group:nth-child(1)::after{
+        content: "";
+        background-image: url("/img/otoiawase-min.jpg");
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: cover;
+        position: absolute;
+        top: -4.5rem;
+        left: 54%;
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+    form{
+        padding: 3rem 1rem;
+    }
+}
+@include mq('tab'){
+     //猫ちゃん
+     .form-group:nth-child(1)::after{
+        content: "";
+        background-image: url('/img/otoiawase-min.jpg');
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: cover;
+        position: absolute;
+        top: -6rem;
+        left: 70%;
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+}
+@include mq('pc'){
+    
+    //猫ちゃん
+    .form-group:nth-child(1)::after{
+        content: "";
+        background-image: url('/img/otoiawase-min.jpg');
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: cover;
+        position: absolute;
+        top: -6rem;
+        left: 90%;
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+    
+}

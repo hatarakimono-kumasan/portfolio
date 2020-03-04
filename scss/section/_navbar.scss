@@ -1,0 +1,209 @@
+.navbar{
+    height: 100px;
+    padding: 0;
+    width: 90%;
+    margin:auto;
+    z-index: 10;
+
+    .navbar-brand{
+        z-index: 200;
+        cursor: pointer;
+
+        img {
+            z-index: 200;
+            width: 15rem;
+        } 
+    }
+}
+.navbar-toggler{
+    position: absolute;
+    top: 2rem;
+    right: 5%;
+}
+.nav-item{
+    cursor: pointer;
+}
+@include mq('sp'){
+    .navbar-collapse{
+        z-index: 10;
+        flex-basis: inherit;
+        flex-grow: inherit;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100%;
+    }
+    .navbar{
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        .navbar-brand{
+        
+            img{
+                width: 13rem;
+            }
+        }
+    }
+    .navbar-nav{
+        line-height: 24vh;
+        margin-top: 3rem;
+    }
+    
+}
+
+
+@include mq('tab'){
+
+    .navbar-collapse{
+
+        .navbar-nav{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+
+            .nav-item{
+
+                .nav-link{
+                    padding: 0rem 0.5rem 0;
+                }
+            }
+            li:nth-child(4) > i{
+                display: none;
+            }
+        }
+    }
+    .navbar .navbar-brand {
+        padding: 1.5rem 0 0 0rem;
+        margin: 0;
+    }
+    .navbar-collapse> ul > li:nth-child(1) {
+        
+        a::before{
+            font-family:  "Font Awesome 5 Free";
+            font-weight: 900;
+            content:"\f2bb";
+            font-size: 2.5rem;
+            position: absolute;
+            top: 1rem;
+            padding-left: 0.5rem;
+        } 
+    }
+    .navbar-collapse > ul > li:nth-child(2)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f4c2";
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1rem;
+        padding-left: 0.3rem;
+        }
+    }
+    .navbar-collapse > ul > li:nth-child(3)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f4ad";
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1rem;
+        padding-left: 0.5rem;
+        }
+    }
+    .navbar-collapse > ul > li:nth-child(4)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f5fc";
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1rem;
+        padding-left: 0.5rem;
+        }
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+}
+    //=====================================================================================================
+@include mq('pc'){
+    .navbar .navbar-brand {
+        padding: 1.5rem 0 0 0rem;
+        margin: 0;
+    }
+    .navbar-collapse{
+        
+        .navbar-nav{
+            width: 100%;
+            justify-content: flex-end;
+
+            .nav-item .nav-link{
+                padding: 0 2rem;
+            }
+        }
+        .fa-times{
+            display: none;
+        }
+    }
+    .navbar-collapse> ul > li:nth-child(1) {
+        
+        a::before{
+            font-family:  "Font Awesome 5 Free";
+            font-weight: 900;
+            content:"\f2bb";
+            font-size: 3.5rem;
+            position: absolute;
+            top: 0rem;
+        } 
+    }
+    .navbar-collapse > ul > li:nth-child(2)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f4c2";
+        font-size: 3.5rem;
+        position: absolute;
+        top: 0rem;
+        }
+    }
+    .navbar-collapse > ul > li:nth-child(3)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f4ad";
+        font-size: 3.5rem;
+        position: absolute;
+        top: 0rem;
+        }
+    }
+    .navbar-collapse > ul > li:nth-child(4)  {
+        
+        a::before{
+        font-family:  "Font Awesome 5 Free";
+        font-weight: 900;
+        content:"\f5fc";
+        font-size: 3.5rem;
+        position: absolute;
+        top: 0;
+        }
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+}

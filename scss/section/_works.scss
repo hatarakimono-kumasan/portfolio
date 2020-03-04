@@ -1,0 +1,64 @@
+.works{
+   
+    .bg{
+        background-image: url("/img/done-min.jpg");
+        width: 100%;
+        position: relative;
+        top:-8rem;
+        background-size: cover;
+    } 
+    .ribbon{
+        top: 0rem;
+        z-index: 10;
+    }
+    &_content{
+        padding: 14rem 2rem 1rem;
+        margin-top: -100px; //nav-linkから飛んできたときにtopの高さをそろえるため
+    } 
+    a img{
+        width: 90%;
+    }
+    &_content{
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+    }
+    &_item{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+@include mq('sp'){
+    .works{
+
+        a img{
+            width: 100%;
+        }
+    }
+}
+@include mq('tab'){
+    .works{
+
+        a img{
+            width: 100%;
+        }
+    }
+}
+@include mq('pc'){
+    .works{
+   
+        &_content{
+            padding: 14rem 2rem 0;
+        } 
+        &_items{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &_item{
+            width: 50%;
+            margin-bottom: 5rem;
+        }
+    }
+}

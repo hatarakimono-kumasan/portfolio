@@ -1,0 +1,50 @@
+
+.ribbon {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    color: #FFF;
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 5rem;
+}
+.ribbon h2 {
+	margin: 0;
+	padding: 0 30px;
+	border-top: dashed 2px $effect-coloer;/*点線の色*/
+	border-bottom: dashed 2px $effect-coloer;/*点線の色*/
+	line-height: 42px;
+}
+.ribbon::before, .ribbon::after {
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0px;
+	z-index: 1;
+}
+h2 {
+	position: relative;
+	color: #333;
+	display: inline-block;
+	margin: 47px 0;
+	text-shadow: 0 0 2px white;
+	z-index: 10;
+}
+h2:before {
+	content: "";
+	position: absolute;
+	background: #a9e1ff;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	top: 50%;
+	border: dashed 1px white;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: -10;
+	box-shadow: 0px 0px 0px 5px #a9e1ff;
+}

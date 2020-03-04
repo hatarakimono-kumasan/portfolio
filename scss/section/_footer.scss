@@ -1,0 +1,27 @@
+footer::before{
+    content: "";
+    display: inline-block;
+    background-image: url("/img/nezumi.gif");
+    width: 100px;
+    height: 70px;
+}
+footer{
+    display: flex;
+    line-height: 70px;
+    justify-content: center;
+
+    p{
+        text-align: center;
+    }
+}
+hr{
+    border-top: 2px solid $effect-coloer;
+    width: 80%;
+    display: block;
+    margin:2rem auto;
+}
+
+
+
+
+

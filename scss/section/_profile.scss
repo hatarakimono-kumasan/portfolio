@@ -1,0 +1,174 @@
+.profile{
+    background-image: url('/img/paper_baju-min.jpg');
+    background-repeat: round;
+    width: 90%;
+    padding: 5rem;
+    margin: auto;
+    margin-top: -100px;
+    margin-bottom: 150px;//nav-linkから飛んできたときにtopの高さをそろえるため(service)
+
+    h3 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ccc;
+    width: 20rem;
+    margin-bottom: 2rem;
+    }
+    h3::before,
+    h3::after {
+        position: absolute;
+        content: '';
+        border-radius: 100%
+    }
+    h3::before {
+        top: .2em;
+        left: .2em;
+        z-index: 2;
+        width: 18px;
+        height: 18px;
+        background: rgba(150, 150, 150, .5);
+    }
+    h3::after {
+        top: .7em;
+        left: .7em;
+        width: 13px;
+        height: 13px;
+        background: rgba(210, 210, 210, .5);
+    }
+    .about-me {
+        text-align: center;
+        
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 1px solid #03a9f48a;
+            text-align: center;
+            object-fit: cover;
+        }
+    }
+}
+
+@include mq('sp'){
+    
+   .about-me-pc{
+       display: none;
+   }
+    .profile{
+        
+       .box-wapper{
+        //padding: 0rem 1rem 4rem;
+            .skill {
+
+                .skill_box {
+                    .skill_items{
+                        position: relative;
+                        h4{
+                            position: absolute;
+                            top: 46%;
+                            left: 40%;
+                        }
+                        .slill_item{
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+           .about-me img{
+               width: 200px;
+               height: 200px;
+               border-radius: 50%;
+               border: 1px solid #03a9f48a;
+               text-align: center;
+               object-fit: cover;
+            } 
+        }
+    }
+}
+@include mq('tab'){
+    .about-me-pc{
+        display: none;
+    }
+    .profile{
+        .box-wapper{
+                
+            .box_1{
+                display: flex;
+            }
+            .skill{
+                
+
+                .skill_box{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    
+                    
+                    .skill_items{
+                        position: relative;
+                        h4{
+                            position: absolute;
+                            top: 49%;
+                            left: 35%;
+                        }
+                        #chart2,#chart3,#chart4{
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq('pc'){
+    .profile{
+       width: 93%;
+       margin: 5rem 3rem 5rem;
+        .box-wapper{
+            
+            .box_1{
+                display: flex;
+            }
+            .skill{
+                
+                .skill_box{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    
+                    .skill_items{
+                        position: relative;
+                        h4{
+                            position: absolute;
+                            top: 49%;
+                            left: 35%;
+                        }
+                        #chart2,#chart3,#chart4{
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .about-me{
+                display: none;
+            }
+            .about-me-pc {
+                
+                img {
+                    margin: -3rem 0  0 0rem;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    border: 1px solid #03a9f48a;
+                    text-align: center;
+                    object-fit: cover;
+                }
+                p{
+                    text-align: center;
+                    margin: 3rem 3rem 0rem 5rem
+                }
+            }
+        }
+    }
+}

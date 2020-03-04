@@ -1,0 +1,72 @@
+.qestion_box:nth-child(1) {
+    position: relative;
+    span{
+        position: absolute;
+        top: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        right: 4%;
+    }
+    .answer{
+        display: none;
+        background-color: #a9e1ff45;
+        border-bottom: 2px solid rgb(33, 150, 243);
+        border-radius: 200px 27px;
+        padding: 2rem 3rem;
+        margin-bottom: 1rem;
+    }
+}
+.qestion_box:nth-child(2) {
+    position: relative;
+    span{
+        position: absolute;
+        top: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        right: 4%;
+    }
+    .answer{
+        display: none;
+        background-color: #ffc10759;
+        border-bottom: 2px solid #ff5722;
+        border-radius: 27px 200px;
+        padding: 2rem 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.qestion_box:nth-child(3) {
+    position: relative;
+    span{
+        position: absolute;
+        top: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        right: 4%;
+    }
+    .answer{
+        display: none;
+        background-color: #a9e1ff45;
+        border-bottom: 2px solid rgb(33, 150, 243);
+        border-radius: 200px 27px;
+        padding: 2rem 3rem;
+        margin-bottom: 1rem;
+    }
+}
+.qestion{
+    background-color: #fcfcfe8a;
+    border-bottom: 1px solid blue;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+}
+
+
+@include mq('sp'){
+    
+}
+@include mq('tab'){
+   
+}
+@include mq('pc'){
+    
+}

@@ -1,0 +1,40 @@
+//和文と英文でfont-family/フォントサイズを別々に指定
+//(和文)
+:lang(ja) {
+    font-family: '游ゴシック', sans-serif;
+    color: #3E3E3E;
+    font-size: _rem(16px);
+}
+    h1:lang(ja){
+        font-size: _rem(30px);
+        font-weight: bold;
+    }
+    h2:lang(ja){
+        font-size: _rem(28px);
+        font-weight: bold;
+    }
+    h3:lang(ja){
+        font-size: _rem(20px);
+        font-weight: bold;
+    }
+
+//（英文）
+:lang(en){
+    font-family: 'Montserrat Alternates';
+    color: #3E3E3E;
+    font-size: _rem(18px);
+}
+    h1:lang(en){
+        font-size: _rem(38px);
+        font-weight: bold;
+    }
+    h2:lang(en){
+        font-size: _rem(26px);
+        font-weight: bold;
+    }
+    h3:lang(en){
+        font-size: _rem(20px);
+        font-weight: bold;
+    }
+
+//===========================================================================================================

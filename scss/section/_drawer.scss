@@ -1,0 +1,57 @@
+/*===============drawerを使うために必要なCDN=========================================
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"><!-- drawer.css -->
+
+<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script><!--iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script><!-- drawer.js -->
+==================================================================================*/
+//コレ↓書いてなくてハマった
+.drawer_back.open {
+    display: block;
+}
+.drawer_back.close {
+    display: none;
+}
+
+body.noscroll{
+    overflow: hidden;
+}
+//================================================================================//
+@include mq('sp'){
+    .drawer_back{
+        width: 100%;
+        /* height: 100vh; */
+        z-index: 100;
+        //background: linear-gradient(0deg, #d3e4f9f5 50%, #eef2ce 80%, #bbeffff7 90%, #d3f9f2fa 100%);
+        background-image: url('/img/paper_light_pink-min.jpg');;
+    }
+    .nav-item{
+        text-align: center;
+    }
+    
+    .nav-link{
+        font-size: 34px;
+        font-weight: 700;
+        color: #686060;
+    }
+    .fa-times{
+        font-family: "Font Awesome 5 Free";
+        font-size: 3.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+}
+@include mq('tab'){
+
+    .drawer-back{
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+}
+@include mq('pc'){
+
+}

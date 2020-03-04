@@ -1,0 +1,18 @@
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@include mq('sp'){
+    html{
+        width: fit-content;
+    }
+}
