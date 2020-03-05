@@ -157,8 +157,8 @@ body .box {
   .top .top-img {
     width: 100%;
     position: absolute;
-    top: 9rem;
-    right: -1%;
+    top: 35%;
+    right: -3%;
     -webkit-transform: rotate3d(1, 1, 1, 16deg);
             transform: rotate3d(1, 1, 1, 16deg);
   }
@@ -168,7 +168,7 @@ body .box {
   .top .top-img {
     width: 81%;
     position: absolute;
-    top: auto;
+    top: 20%;
     right: 9%;
     -webkit-transform: rotate3d(1, 1, 1, 16deg);
             transform: rotate3d(1, 1, 1, 16deg);
@@ -180,25 +180,21 @@ body .box {
     -webkit-transform: rotate3d(1, 1, 1, 16deg);
             transform: rotate3d(1, 1, 1, 16deg);
     width: 40%;
-    margin: 3rem auto;
     display: block;
+    top: 34%;
+    position: absolute;
+    left: 29%;
   }
 }
 
 .profile {
-  margin: 5rem auto;
   background-image: url("/img/paper_baju-min.jpg");
   background-repeat: round;
   width: 90%;
   padding: 5rem;
-  /*  .box-wapper{
-        background-color: #FAEED1;
-        padding: 2rem 5rem;
-        border-radius: 50px;
-        box-shadow: 4px 4px #5d7e8dc7;
-        margin-bottom: 5rem;
-        border:2px solid gray;
-*/
+  margin: auto;
+  margin-top: -100px;
+  margin-bottom: 150px;
 }
 
 .profile h3 {
@@ -354,6 +350,11 @@ body .box {
   }
 }
 
+.service {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+
 .service .box-wapper .service_box {
   margin-bottom: 3rem;
 }
@@ -455,12 +456,13 @@ body .box {
 }
 
 .works .ribbon {
-  top: 5rem;
+  top: 0rem;
   z-index: 10;
 }
 
 .works_content {
   padding: 14rem 2rem 1rem;
+  margin-top: -100px;
 }
 
 .works a img {
@@ -846,7 +848,7 @@ hr {
     width: 13rem;
   }
   .navbar-nav {
-    line-height: 30vh;
+    line-height: 24vh;
     margin-top: 3rem;
   }
 }
@@ -882,6 +884,7 @@ hr {
     font-size: 2.5rem;
     position: absolute;
     top: 1rem;
+    padding-left: 0.5rem;
   }
   .navbar-collapse > ul > li:nth-child(2) a::before {
     font-family: "Font Awesome 5 Free";
@@ -890,7 +893,7 @@ hr {
     font-size: 2.5rem;
     position: absolute;
     top: 1rem;
-    padding-left: 1rem;
+    padding-left: 0.3rem;
   }
   .navbar-collapse > ul > li:nth-child(3) a::before {
     font-family: "Font Awesome 5 Free";
@@ -899,6 +902,7 @@ hr {
     font-size: 2.5rem;
     position: absolute;
     top: 1rem;
+    padding-left: 0.5rem;
   }
   .navbar-collapse > ul > li:nth-child(4) a::before {
     font-family: "Font Awesome 5 Free";
@@ -907,7 +911,7 @@ hr {
     font-size: 2.5rem;
     position: absolute;
     top: 1rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
   .navbar-toggler {
     display: none;
